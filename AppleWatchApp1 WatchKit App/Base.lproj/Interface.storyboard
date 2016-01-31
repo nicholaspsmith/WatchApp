@@ -10,12 +10,19 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchApp1_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Press Me!" id="gk1-Va-j0s">
+                        <button width="87" alignment="center" alpha="0.80000000000000004" title="Flip?" id="gk1-Va-j0s">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="buttonPressed" destination="AgC-eL-Hgc" id="tmZ-0z-qb3"/>
+                            </connections>
                         </button>
+                        <label width="136" height="34.5" alignment="center" verticalAlignment="center" text="Flip A Coin" textAlignment="center" id="K8g-Yg-pVL"/>
                     </items>
                     <color key="backgroundColor" red="0.0" green="0.75631876689999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="nameLbl" destination="K8g-Yg-pVL" id="WoY-vR-5lu"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
